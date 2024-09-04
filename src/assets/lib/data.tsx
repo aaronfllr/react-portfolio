@@ -249,7 +249,7 @@ export const aboutMeData = {
   description_EN: "A few snippets about me",
   paragraphs_EN: [
     {
-      title: "The Curios World, Digital and Physical",
+      title: "The Curious World, Digital and Physical",
       description:
         "When I'm not exploring the digital world, I explore mountains, hiking trails, and rivers.",
       icon: hardwareicon,
