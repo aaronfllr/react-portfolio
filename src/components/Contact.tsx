@@ -114,11 +114,12 @@ import  { useState } from "react";
 
 // Creating Email: 
 
-const [sender, setSender] = "${name}${
+const [sender, setSender] = \n"${name}${
     lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
   }";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
+const [recipient, setRecipient] = \n"${email}${
+    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : 
+    ""
   }";
 const [subject, setSubject] = \n"${subject}${
     lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
