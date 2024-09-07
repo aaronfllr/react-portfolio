@@ -35,10 +35,15 @@ const Contact: React.FC = () => {
     console.log(error);
 
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    const payload = {
+      name,
+      email,
+      subject,
+      message,
+    }
 
     try {
-      const response = await axios.post(apiBaseUrl, data);
+      const response = await axios.post('/.netlify/functions/send-email', payload);
       console.log(response);
 
       toast.success(toastMessages.successEmailSent.en);
