@@ -5,8 +5,11 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
-
+  packages = with pkgs; [
+    git
+    netlify-cli # for netlify local testing netlify dev
+    deno # required for testin nelify functions locally
+  ];
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
   languages.javascript.enable = true;

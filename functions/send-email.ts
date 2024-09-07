@@ -1,7 +1,7 @@
 import { Resend } from 'resend';
 import { Handler } from '@netlify/functions';
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY as string);
+const resend = new Resend(process.env.VITE_RESEND_API_KEY as string);
 
 interface EmailRequest {
     name: string;
@@ -24,7 +24,7 @@ export const handler: Handler = async (event) => {
         ${message}
         `
         await resend.emails.send({
-            from: `Portfolio Website <${import.meta.env.SENDER_EMAIL}>`,
+            from: `Portfolio Website <${process.env.SENDER_EMAIL}>`,
             to: "aaronfllr.work@gmail.com",
             subject: subject,
             text: emailBody,

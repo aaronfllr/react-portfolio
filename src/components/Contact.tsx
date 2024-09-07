@@ -10,7 +10,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
