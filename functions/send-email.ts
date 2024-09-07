@@ -11,9 +11,8 @@ interface EmailRequest {
 }
 
 export const handler: Handler = async (event) => {
-    try {
         const {name, email, subject, message}: EmailRequest = JSON.parse(event.body as string);
-
+ 
         const emailBody = `
         You have a new message from your portfolio website:
 
@@ -23,23 +22,18 @@ export const handler: Handler = async (event) => {
         Message:
         ${message}
         `
-        await resend.emails.send({
+        const {data, error} = await resend.emails.send({
             from: `Portfolio Website <${process.env.SENDER_EMAIL}>`,
             to: "aaronfllr.work@gmail.com",
             subject: subject,
             text: emailBody,
         });
-
+        
+        if (error) return {
+            statusCode: 400,
+            body: JSON.stringify(error),
+        }; 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: "Email sent successfully" }),
-        }; 
-    } 
-    catch (error) {
-        console.error('Error sending email', error);
-        return {
-            statusCode: 500,
-            body: JSON.stringify({ message: "Error sending email" }),
-        }
-    }
+            body: "Email sent successfully"};
 }
