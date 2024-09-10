@@ -110,7 +110,6 @@ const NavBar: React.FC = () => {
                     &lt;
                   </span>
                   {link.en}
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               ) : (
                 <div
@@ -121,7 +120,6 @@ const NavBar: React.FC = () => {
                 >
                   {link.en}
 
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               )}
             </CustomNavLink>
