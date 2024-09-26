@@ -89,7 +89,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <ScrollToAnchor />
       {!isMobileMenuActive && (
         <nav
@@ -159,7 +159,7 @@ const NavBar: React.FC = () => {
           ))}
         </nav>
       )}
-    </React.Fragment>
+  </>
   );
 };
 
