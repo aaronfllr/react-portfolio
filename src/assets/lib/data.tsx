@@ -29,7 +29,7 @@ export const headerIntroData = {
   title: {
     en: "Hi, I'm Aaron",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Fullstack Developer an Technical Recruiter",
   description: {
     en: "I'm Aaron, a Fullstack Developer and Technical Recruiter with the goal of advancing my career, participating in inspiring projects, and helping others further their careers. Here I present my work and my passion for web development. Let's solve some problems!",
   },
