@@ -89,7 +89,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <ScrollToAnchor />
       {!isMobileMenuActive && (
         <nav
@@ -110,7 +110,6 @@ const NavBar: React.FC = () => {
                     &lt;
                   </span>
                   {link.en}
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               ) : (
                 <div
@@ -121,7 +120,6 @@ const NavBar: React.FC = () => {
                 >
                   {link.en}
 
-                  {/* {link.de.toLocaleUpperCase()} */}
                 </div>
               )}
             </CustomNavLink>
@@ -161,7 +159,7 @@ const NavBar: React.FC = () => {
           ))}
         </nav>
       )}
-    </React.Fragment>
+  </>
   );
 };
 

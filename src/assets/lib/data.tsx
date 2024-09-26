@@ -31,7 +31,7 @@ export const headerIntroData = {
   },
   subtitle: "Fullstack Developer ",
   description: {
-    en: "I'm Aaron, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's solve some problems!",
+    en: "I'm Aaron, a Fullstack Developer and Technical Recruiter with the goal of advancing my career, participating in inspiring projects, and helping others further their careers. Here I present my work and my passion for web development. Let's solve some problems!",
   },
   buttons: [
     {
@@ -339,7 +339,7 @@ export const contactData = {
       en: "I agree that Aaron may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      en: "By submitting this request, you acknowledge that you have read the Private Policy",
+      en: "",
     },
   },
 } as const;

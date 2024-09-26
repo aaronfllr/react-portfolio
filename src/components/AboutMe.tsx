@@ -31,7 +31,7 @@ const AboutMe: React.FC = () => {
   const paragraphs = aboutMeData.paragraphs_EN;
 
   return (
-    <React.Fragment>
+      <>
       <section className="about-me relative mt-16 " id="about-me" ref={ref}>
         <div className="title-container flex flex-col gap-6 justify-center items-center p-32 w-1/2 max-lg:w-full max-lg:p-16 max-lg:items-start">
           <motion.div
@@ -124,7 +124,7 @@ const AboutMe: React.FC = () => {
           </Swiper>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 
